@@ -200,11 +200,11 @@ function Home() {
                     className="rounded-lg mt-2 max-h-md px-6 py-6 w-full border-2 border-blue-900 backdrop-blur-md transition duration-300 bg-[#182b42]/30 hover:bg-[#182b42]/80"
                     key={repo.id}
                   >
-                    <a
-                      href={repo.html_url}
+                    <div
+                      // href={repo.html_url}
                       className="relative block overflow-hidden rounded-lg p-4 sm:p-4 lg:py-px"
-                      key={repo.id}
-                      target="_blank"
+                      // key={repo.id}
+                      // target="_blank"
                     >
                       <div className="sm:flex sm:justify-between sm:gap-2">
                         <div>
@@ -246,12 +246,33 @@ function Home() {
                           </dt>
                         </div>
                       </dl>
-                      {repo.language && (
-                        <div className="absolute bottom-0 right-0 text-sm mt-2 px-4 text-white font-semibold p-1 bg-[#182b42]/20 border border-[#05BFDB] rounded-xl flex justify-center items-center">
-                          {repo.language}
-                        </div>
-                      )}
-                    </a>
+
+                      <div className="flex justify-end mt-2 space-x-2">
+                        <a
+                          href={repo.html_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center px-2 py-1 text-s font-semibold text-white bg-blue-500 rounded-md hover:bg-blue-600"
+                        >
+                          Show Code
+                        </a>
+                        {repo.homepage && (
+                          <a
+                            href={repo.homepage}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center px-2 py-1 text-s font-semibold text-white bg-green-500 rounded-md hover:bg-green-600"
+                          >
+                            Live Demo
+                          </a>
+                        )}
+                        {repo.language && (
+                          <span className="inline-flex items-center px-2 py-1 text-s font-semibold text-white bg-[#182b42]/20 border border-[#05BFDB] rounded-md">
+                            {repo.language}
+                          </span>
+                        )}
+                      </div>
+                    </div>
                   </div>
                 ))}
               </ul>

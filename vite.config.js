@@ -1,7 +1,14 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import staticSite from 'vite-plugin-static-site';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  plugins: [
+    staticSite({
+      staticDir: 'dist', // The directory where the built files are located
+      buildOptions: {
+        outDir: 'build', // The output directory for the build
+      },
+    }),
+  ],
+  base: '/My_Portfolio/', // Replace 'your-repo-name' with the name of your GitHub repo
+});
