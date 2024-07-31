@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background: radial-gradient(
+    circle at 150% 0,
+    #182b42 0,
+    #111526 100%
+  );
+  color:var(--white);
+
+}
+@font-face {
+  font-family: "Fonarto";
+  src: url("./assets/Fonarto.ttf");
+}
+
+.title_lines {
+  position: relative;
+  font-size: 30px;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  color: #3267EA;
+  font-family: arial;
+}
+.title_lines:before, .title_lines:after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 48%;
+  height: 1px;
+  content: '\a0';
+  background-color: #cccccc;
+  margin-left: 2%;
+}
+.title_lines:before {
+  margin-left: -50%;
+  text-align: right;
+}

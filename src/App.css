@@ -1,0 +1,63 @@
+.App {
+  height: 100vh;
+  /* overflow-y: hidden;  */
+}
+
+.progress1 {
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 10px;
+  z-index: 9999;
+}
+
+.progress-value1 {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: rgba(38, 0, 255, 0.555);
+  height: 10px;
+  width: 0;
+}
+
+/* Ensure no other scrollbars appear */
+body,
+html {
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Hide vertical scrollbar */
+.scrollable-content {
+  overflow-y: scroll; /* or auto if you want to show scrollbar when needed */
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.scrollable-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+.scrollable-content {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scroll-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.scroll-to-top:hover {
+  background-color: #03a0c6;
+}
