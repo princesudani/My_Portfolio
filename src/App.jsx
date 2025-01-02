@@ -16,7 +16,7 @@ import {
 import { ImProfile } from "react-icons/im";
 import { SiGmail } from "react-icons/si";
 import img from "./assets/logo.png";
-import pdf from "./assets/Prince.pdf";
+import pdf from "./assets/Prince Sudani CV.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
@@ -122,12 +122,11 @@ function Home() {
               <div className="flex flex-col  ">
                 <div className="mt-2">
                   <h1 className="text-3xl text-[#ffffff] font-medium font-['Fonarto']">
-                    Hi, I’m {user.name} 👋
+                    Hi, I'm {user.name} 👋
                   </h1>
                 </div>
                 <p className="text-lg font-medium">
-                  I’m a web developer, I am interested in low-level programming
-                  as a hobby.
+                I am a skilled web developer who enjoys creating visually appealing and functional websites. Using HTML, CSS, and JavaScript, I transform designs into interactive web pages. I am always learning and staying up-to-date with the latest trends in web development.
                 </p>
                 <div className="flex flex-wrap justify-center py-8 font-bold">
                   <a href={pdf} download>

@@ -6,18 +6,20 @@ import {
   FaHtml5,
   FaReact,
   FaArrowUp,
+  FaGithub,
 } from "react-icons/fa";
-import pdf from "./assets/Prince.pdf";
+import pdf from "./assets/Prince Sudani CV.pdf";
 import img from "./assets/logo.png";
 import {
   IoArrowBackSharp,
   IoLanguage,
   IoLogoJavascript,
 } from "react-icons/io5";
-import { TbBrandRedux } from "react-icons/tb";
-import { SiJest, SiTailwindcss } from "react-icons/si";
+import { TbApi, TbBrandRedux } from "react-icons/tb";
+import { SiJest, SiMui, SiTailwindcss, SiTestinglibrary, SiTypescript } from "react-icons/si";
 import "./index.css";
 import { Link } from "react-router-dom";
+import { DiResponsive } from "react-icons/di";
 
 const Cv = () => {
   const [progressWidth, setProgressWidth] = useState(0);
@@ -60,8 +62,6 @@ const Cv = () => {
       </div>
       <div
         className="App text-white h-screen overflow-auto scrollable-content"
-        data-aos="fade-down"
-        data-aos-duration="800"
         ref={scrollableContainerRef}
       >
         <div className="py-4 mx-auto max-w-4xl">
@@ -85,7 +85,7 @@ const Cv = () => {
               passion for creating visually appealing and functional websites.
             </p>
             <a href={pdf} download>
-              <button className="flex justify-center items-center w-40 gap-x-2 transition duration-300 rounded-full text-base bg-[#be4444] text-[#fff] hover:text-[#be4444] hover:bg-[#fff] m-4 p-2 mx-auto">
+              <button className="flex font-bold justify-center items-center w-40 gap-x-2 transition duration-300 rounded-full text-base bg-[#be4444] text-[#fff] hover:text-[#be4444] hover:bg-[#fff] m-4 p-2 mx-auto">
                 <FaDownload /> Get Resume
               </button>
             </a>
@@ -146,6 +146,34 @@ const Cv = () => {
                       <li className="flex justify-center items-center w-32 gap-x-2 transition duration-300 rounded-full text-base bg-[#be4495] text-[#fff] hover:text-[#be4495] hover:bg-[#fff] m-2 p-2">
                         <SiTailwindcss />
                         Tailwind
+                      </li>
+                      <li className="flex justify-center items-center w-32 gap-x-2 transition duration-300 rounded-full text-base bg-[#10151a] text-[#fff] hover:text-[#10151a] hover:bg-[#fff] m-2 p-2">
+                        <SiTypescript />
+                        TypeScript
+                      </li>
+                      <li className="flex justify-center items-center w-32 gap-x-2 transition duration-300 rounded-full text-base bg-[#be4444] text-[#fff] hover:text-[#be4444] hover:bg-[#fff] m-2 p-2">
+                        <SiTestinglibrary />
+                        RTL
+                      </li>
+                      <li className="flex justify-center items-center w-32 gap-x-2 transition duration-300 rounded-full text-base bg-[#10151a] text-[#fff] hover:text-[#10151a] hover:bg-[#fff] m-2 p-2">
+                        <SiMui />
+                        Material UI
+                      </li>
+                      <li className="flex justify-center items-center w-32 gap-x-2 transition duration-300 rounded-full text-base bg-[#EA4C89] text-[#fff] hover:text-[#EA4C89] hover:bg-[#fff] m-2 p-2">
+                        <FaGithub />
+                        GitHub
+                      </li>
+                      <li className="flex justify-center items-center w-32 gap-x-2 transition duration-300 rounded-full text-base bg-[#0a7ff5] text-[#fff] hover:text-[#0a7ff5] hover:bg-[#fff] m-2 p-2">
+                        <TbApi />
+                        APIs
+                      </li>
+                      <li className="flex justify-center items-center w-32 gap-x-2 transition duration-300 rounded-full text-base bg-[#1ecc18] text-[#fff] hover:text-[#1ecc18] hover:bg-[#fff] m-2 p-2">
+                        <DiResponsive />
+                        UI Design
+                      </li>
+                      <li className="flex justify-center items-center w-32 gap-x-2 transition duration-300 rounded-full text-base bg-[#be4495] text-[#fff] hover:text-[#be4495] hover:bg-[#fff] m-2 p-2">
+                        <SiTestinglibrary />
+                        Enyzme
                       </li>
                     </ul>
                     <h1 className="text-2xl text-white font-semibold mt-9 title_lines">
